@@ -4,8 +4,9 @@
 name: Python Test application
 
 on:
-  push:
-    branches: [ "main" ]
+  # push:
+  #   branches: [ "main" ]
+  workflow_dispatch:
   pull_request:
     branches: [ "main" ]
 
