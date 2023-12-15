@@ -62,7 +62,7 @@ for p in range(length):
         ske = ''
     else:
         ske = skes[-1]
-    output.write("'"+title+"'"+","+ske+","+ports+","+company+","+price+","+'\n')
+    output.write('"'+title+'"'+","+ske+","+ports+","+company+","+price+","+'\n')
     # if title:
     #     print("Title:", title)
     # print(price)
