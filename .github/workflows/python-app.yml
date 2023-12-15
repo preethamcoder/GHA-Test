@@ -43,5 +43,7 @@ jobs:
     - name: Run the File
       run: |
         ls
+        cd Scrape_Amazon
+        ls
       # python ../Scrape_Amazon/switch.py
       # cat routerinfo.csv
