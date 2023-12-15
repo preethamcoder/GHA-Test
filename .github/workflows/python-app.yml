@@ -4,9 +4,9 @@
 name: Python Test application
 
 on:
-  # push:
-  #   branches: [ "main" ]
-  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  # workflow_dispatch:
   pull_request:
     branches: [ "main" ]
 
@@ -32,7 +32,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest
+        pip install flake8 pytest bs4
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
@@ -42,6 +42,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run the File
       run: |
-        python main.py
-        java --version
-        java Java_Test.java
+        python switch.py
+        cat routerinfo.csv
