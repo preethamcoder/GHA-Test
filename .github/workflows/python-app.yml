@@ -32,7 +32,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest bs4
+        # pip install flake8 pytest bs4
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
@@ -43,7 +43,8 @@ jobs:
     - name: Run the File
       run: |
         ls
-        python main.py
+        javac Java_test.java
+        java Java_Test
         # cd Scrape_Amazon
         # python switch.py
         # cat routerinfo.csv
