@@ -43,8 +43,9 @@ jobs:
     - name: Run the File
       run: |
         ls
-        cd Scrape_Amazon
-        python switch.py
-        cat routerinfo.csv
+        python main.py
+        # cd Scrape_Amazon
+        # python switch.py
+        # cat routerinfo.csv
       # python ../Scrape_Amazon/switch.py
       # cat routerinfo.csv
