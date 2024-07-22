@@ -13,7 +13,7 @@ public class Counter_Demo{
         int temp = d.getCount();
         System.out.println(temp);
         d.reset();
-        temp = d.reset();
+        temp = d.getCount();
         System.out.println(temp);
     }
 }
