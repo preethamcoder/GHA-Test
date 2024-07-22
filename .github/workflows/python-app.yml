@@ -43,7 +43,7 @@ jobs:
     - name: Run the File
       run: |
         ls
-        javac Java_test.java
+        javac Java_Test.java
         java Java_Test
         # cd Scrape_Amazon
         # python switch.py
