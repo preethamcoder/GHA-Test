@@ -44,6 +44,7 @@ jobs:
       run: |
         ls
         javac Java_Test.java
+        javac Counter.java
         java Java_Test
         # cd Scrape_Amazon
         # python switch.py
