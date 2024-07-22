@@ -10,6 +10,7 @@ public class Counter_Demo{
         System.out.println(tmp);
         Counter d = new Counter(10);
         d.increment(10);
+        d.increment(-5);
         int temp = d.getCount();
         System.out.println(temp);
         d.reset();
