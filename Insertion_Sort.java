@@ -6,5 +6,21 @@ public class Insertion_Sort{
         for (int ind = 0; ind < length; ind++){
             System.out.println(arr[ind]);
         }
+        public static void ins_sort(int[] array){
+            int len = array.length;
+            for (int ind = 1; ind < len; ind++){
+                int curr = array[ind];
+                int mv = ind;
+                while (mv > 0 && array[mv] >= curr){
+                    array[mv] = array[mv-1];
+                    mv--;
+                }
+                array[mv] = curr;
+            }
+            for (ind tmp = 0; tmp < array.length; tmp++){
+                System.out.println(array[tmp]);
+            }
+        }
+        ins_sort(arr);
     }
 }
