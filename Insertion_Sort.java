@@ -21,6 +21,6 @@ public class Insertion_Sort{
                 System.out.println(array[tmp]);
             }
         }
-        ins_sort(arr);
+        System.out.println(ins_sort(arr));
     }
 }
