@@ -24,6 +24,6 @@ public class Insertion_Sort{
             for (int tmp = 0; tmp < array.length; tmp++){
                 System.out.println(array[tmp]);
             }
-            return arr
+            return arr;
         }
 }
