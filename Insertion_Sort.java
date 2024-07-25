@@ -6,7 +6,9 @@ public class Insertion_Sort{
         for (int ind = 0; ind < length; ind++){
             System.out.println(arr[ind]);
         }
-        public static void ins_sort(int[] array){
+        System.out.println(ins_sort(arr));
+    }
+    public static void ins_sort(int[] array){
             int len = array.length;
             for (int ind = 1; ind < len; ind++){
                 int curr = array[ind];
@@ -21,6 +23,4 @@ public class Insertion_Sort{
                 System.out.println(array[tmp]);
             }
         }
-        System.out.println(ins_sort(arr));
-    }
 }
