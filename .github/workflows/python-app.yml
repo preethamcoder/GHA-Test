@@ -43,10 +43,12 @@ jobs:
     - name: Run the File
       run: |
         ls
-        javac Java_Test.java
-        javac Counter_Demo.java
-        java Counter_Demo
-        java Java_Test
+#        javac Java_Test.java
+#        javac Counter_Demo.java
+#        java Counter_Demo
+#        java Java_Test
+        javac Insertion_Sort.java
+        java Insertion_Sort
         # cd Scrape_Amazon
         # python switch.py
         # cat routerinfo.csv
