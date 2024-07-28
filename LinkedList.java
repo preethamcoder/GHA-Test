@@ -42,7 +42,7 @@ public class LinkedList{
             return;
         }else{
             Node nd = head;
-            int cter = 0;
+            int cter = 1;
             Node adder = new Node(v);
             while(cter < pos){
                 nd = nd.next;
