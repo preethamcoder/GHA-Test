@@ -14,10 +14,21 @@ public class LinkedList{
         tmp.next = head;
         head = tmp;
     }
+    public void addLast(int val){
+        Node tmp = new Node(val);
+        Node nd = head;
+        while(nd.next != null){
+            nd = nd.next;
+        }
+        nd.next = tmp;
+    }
     public static void main(String[] args) {
         LinkedList lst = new LinkedList();
         lst.addFirst(20);
+        lst.addLast(2);
+        lst.addLast(100);
         lst.addFirst(80);
+
         Node tmp = lst.head;
         while(tmp != null){
             System.out.println(tmp.value);
