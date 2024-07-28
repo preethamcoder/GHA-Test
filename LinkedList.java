@@ -66,9 +66,12 @@ public class LinkedList{
         lst.addLast(-20);
         lst.addFirst(20);
         lst.addAtN(-100, 1);
-        // lst.addLast(2);
-        // lst.addLast(100);
-        // lst.addFirst(80);
+        lst.addLast(2);
+        lst.addAtN(40, 0);
+        lst.addLast(100);
+        lst.addAtN(66, 6);
+        lst.addFirst(80);
+        lst.addAtN(55, 4);
         lst.display();
         // Node tmp = lst.head;
         // while(tmp != null){
