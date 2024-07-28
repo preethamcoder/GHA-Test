@@ -24,6 +24,7 @@ public class LinkedList{
     }
     public static void main(String[] args) {
         LinkedList lst = new LinkedList();
+        lst.addLast(-20);
         lst.addFirst(20);
         lst.addLast(2);
         lst.addLast(100);
