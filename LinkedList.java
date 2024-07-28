@@ -16,6 +16,10 @@ public class LinkedList{
     }
     public void addLast(int val){
         Node tmp = new Node(val);
+        if(head == null){
+            head = tmp;
+            return;
+        }
         Node nd = head;
         while(nd.next != null){
             nd = nd.next;
