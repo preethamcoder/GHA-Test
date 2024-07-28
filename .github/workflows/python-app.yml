@@ -45,10 +45,10 @@ jobs:
         ls
         javac Insertion_Sort.java
         java Insertion_Sort
-      # javac Java_Test.java
+        javac Java_Test.java
       # javac Counter_Demo.java
       # java Counter_Demo
-      # java Java_Test
+        java Java_Test
       # cd Scrape_Amazon
       # python switch.py
       # cat routerinfo.csv
