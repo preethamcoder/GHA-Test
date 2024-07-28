@@ -50,8 +50,16 @@ public class LinkedList{
             }
             adder.next = nd.next;
             nd.next = adder;
+            elems += 1;
         }
-
+    }
+    public void display(){
+        Node tmp = head;
+        while(tmp.next != null){
+            System.out.print(tmp.value + " -> ");
+            tmp = tmp.next;
+        }
+        System.out.println(tmp.value);
     }
     public static void main(String[] args) {
         LinkedList lst = new LinkedList();
@@ -61,12 +69,12 @@ public class LinkedList{
         // lst.addLast(2);
         // lst.addLast(100);
         // lst.addFirst(80);
-
-        Node tmp = lst.head;
-        while(tmp != null){
-            System.out.println(tmp.value);
-            tmp = tmp.next;
-        }
+        lst.display();
+        // Node tmp = lst.head;
+        // while(tmp != null){
+        //     System.out.println(tmp.value);
+        //     tmp = tmp.next;
+        // }
         // System.out.println(lst.head.value);
     }
 }
