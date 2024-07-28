@@ -17,6 +17,12 @@ public class LinkedList{
     public static void main(String[] args) {
         LinkedList lst = new LinkedList();
         lst.addFirst(20);
-        System.out.println(lst.head.value);
+        lst.addFirst(80);
+        Node tmp = lst.head;
+        while(tmp != null){
+            System.out.println(tmp.value);
+            tmp = tmp.next;
+        }
+        // System.out.println(lst.head.value);
     }
 }
