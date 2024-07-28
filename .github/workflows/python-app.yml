@@ -43,10 +43,6 @@ jobs:
     - name: Run the File
       run: |
         ls
-      # javac Insertion_Sort.java
-      # java Insertion_Sort
-        javac Java_Test.java
-        java Java_Test
         javac LinkedList.java
         java LinkedList
       # javac Java_Test.java
