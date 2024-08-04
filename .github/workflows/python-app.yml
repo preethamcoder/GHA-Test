@@ -43,8 +43,9 @@ jobs:
     - name: Run the File
       run: |
         ls
-        javac cnnArt/LinkedList.java
-        java cnnArt/LinkedList
+        cd cnnArt/
+        javac LinkedList.java
+        java LinkedList
       # javac Java_Test.java
       # javac Counter_Demo.java
       # java Counter_Demo
